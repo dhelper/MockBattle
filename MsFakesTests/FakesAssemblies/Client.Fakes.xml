@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Client.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Client.Fakes.ShimDataAccess">
+            <summary>Shim type of Client.DataAccess</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDataAccess.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDataAccess.#ctor(Client.DataAccess)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDataAccess.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDataAccess.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDataAccess.Bind(Client.IDataAccess)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDataAccess.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDataAccess.Constructor">
+            <summary>Sets the shim of DataAccess.DataAccess()</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDataAccess.GetDataString">
+            <summary>Sets the shim of DataAccess.GetData(String id)</summary>
+        </member>
+        <member name="T:Client.Fakes.ShimDataAccess.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDataAccess.AllInstances.GetDataString">
+            <summary>Sets the shim of DataAccess.GetData(String id)</summary>
+        </member>
+        <member name="T:Client.Fakes.ShimDistrobutedCalculator">
+            <summary>Shim type of Client.DistrobutedCalculator</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDistrobutedCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDistrobutedCalculator.#ctor(Client.DistrobutedCalculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDistrobutedCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Client.Fakes.ShimDistrobutedCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDistrobutedCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDistrobutedCalculator.Calculate">
+            <summary>Sets the shim of DistrobutedCalculator.Calculate()</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDistrobutedCalculator.ConstructorIDataAccessICalculatorService">
+            <summary>Sets the shim of DistrobutedCalculator.DistrobutedCalculator(IDataAccess dataAccess, ICalculatorService calculator)</summary>
+        </member>
+        <member name="T:Client.Fakes.ShimDistrobutedCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Client.Fakes.ShimDistrobutedCalculator.AllInstances.Calculate">
+            <summary>Sets the shim of DistrobutedCalculator.Calculate()</summary>
+        </member>
+        <member name="T:Client.Fakes.StubDataAccess">
+            <summary>Stub type of Client.DataAccess</summary>
+        </member>
+        <member name="M:Client.Fakes.StubDataAccess.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.Fakes.StubDataAccess.InitializeStub">
+            <summary>Initializes a new instance of type StubDataAccess</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDataAccess.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDataAccess.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDataAccess.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Client.Fakes.StubDistrobutedCalculator">
+            <summary>Stub type of Client.DistrobutedCalculator</summary>
+        </member>
+        <member name="M:Client.Fakes.StubDistrobutedCalculator.#ctor(Client.IDataAccess,Client.ServiceReference1.ICalculatorService)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.Fakes.StubDistrobutedCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubDistrobutedCalculator</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDistrobutedCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDistrobutedCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Client.Fakes.StubDistrobutedCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Client.Fakes.StubIDataAccess">
+            <summary>Stub type of Client.IDataAccess</summary>
+        </member>
+        <member name="M:Client.Fakes.StubIDataAccess.#ctor">
+            <summary>Initializes a new instance of type StubIDataAccess</summary>
+        </member>
+        <member name="M:Client.Fakes.StubIDataAccess.c::Client#IDataAccess#GetData(System.String)">
+            <summary>Sets the stub of IDataAccess.GetData(String id)</summary>
+        </member>
+        <member name="F:Client.Fakes.StubIDataAccess.GetDataString">
+            <summary>Sets the stub of IDataAccess.GetData(String id)</summary>
+        </member>
+        <member name="T:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient">
+            <summary>Shim type of Client.ServiceReference1.CalculatorServiceClient</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.#ctor(Client.ServiceReference1.CalculatorServiceClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.Bind(Client.ServiceReference1.ICalculatorService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.Bind(System.ServiceModel.ICommunicationObject)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.AddAsyncInt32Int32">
+            <summary>Sets the shim of CalculatorServiceClient.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.AddInt32Int32">
+            <summary>Sets the shim of CalculatorServiceClient.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.Constructor">
+            <summary>Sets the shim of CalculatorServiceClient.CalculatorServiceClient()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.ConstructorBindingEndpointAddress">
+            <summary>Sets the shim of CalculatorServiceClient.CalculatorServiceClient(Binding binding, EndpointAddress remoteAddress)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.ConstructorString">
+            <summary>Sets the shim of CalculatorServiceClient.CalculatorServiceClient(String endpointConfigurationName)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.ConstructorStringEndpointAddress">
+            <summary>Sets the shim of CalculatorServiceClient.CalculatorServiceClient(String endpointConfigurationName, EndpointAddress remoteAddress)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.ConstructorStringString">
+            <summary>Sets the shim of CalculatorServiceClient.CalculatorServiceClient(String endpointConfigurationName, String remoteAddress)</summary>
+        </member>
+        <member name="T:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.AllInstances.AddAsyncInt32Int32">
+            <summary>Sets the shim of CalculatorServiceClient.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.ShimCalculatorServiceClient.AllInstances.AddInt32Int32">
+            <summary>Sets the shim of CalculatorServiceClient.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="T:Client.ServiceReference1.Fakes.StubCalculatorServiceClient">
+            <summary>Stub type of Client.ServiceReference1.CalculatorServiceClient</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.#ctor(System.String,System.ServiceModel.EndpointAddress)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.CreateChannel">
+            <summary>Sets the stub of ClientBase`1.CreateChannel()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.CreateChannel01">
+            <summary>Sets the stub of ClientBase`1.CreateChannel()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.InitializeStub">
+            <summary>Initializes a new instance of type StubCalculatorServiceClient</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubCalculatorServiceClient.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Client.ServiceReference1.Fakes.StubICalculatorService">
+            <summary>Stub type of Client.ServiceReference1.ICalculatorService</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorService.#ctor">
+            <summary>Initializes a new instance of type StubICalculatorService</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorService.AddAsyncInt32Int32">
+            <summary>Sets the stub of ICalculatorService.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorService.AddInt32Int32">
+            <summary>Sets the stub of ICalculatorService.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorService.c::Client#ServiceReference1#ICalculatorService#Add(System.Int32,System.Int32)">
+            <summary>Sets the stub of ICalculatorService.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorService.c::Client#ServiceReference1#ICalculatorService#AddAsync(System.Int32,System.Int32)">
+            <summary>Sets the stub of ICalculatorService.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="T:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel">
+            <summary>Stub type of Client.ServiceReference1.ICalculatorServiceChannel</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.#ctor">
+            <summary>Initializes a new instance of type StubICalculatorServiceChannel</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.Abort">
+            <summary>Sets the stub of ICommunicationObject.Abort()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AddAsyncInt32Int32">
+            <summary>Sets the stub of ICalculatorService.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AddInt32Int32">
+            <summary>Sets the stub of ICalculatorService.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AllowInitializationUIGet">
+            <summary>Sets the stub of IClientChannel.get_AllowInitializationUI()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AllowInitializationUISetBoolean">
+            <summary>Sets the stub of IClientChannel.set_AllowInitializationUI(Boolean value)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AllowOutputBatchingGet">
+            <summary>Sets the stub of IContextChannel.get_AllowOutputBatching()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AllowOutputBatchingSetBoolean">
+            <summary>Sets the stub of IContextChannel.set_AllowOutputBatching(Boolean value)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AttachBackingFieldToAllowInitializationUI">
+            <summary>Attaches delegates to emulate StubICalculatorServiceChannel.AllowInitializationUI as a property with a backing field.</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AttachBackingFieldToAllowOutputBatching">
+            <summary>Attaches delegates to emulate StubICalculatorServiceChannel.AllowOutputBatching as a property with a backing field.</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.AttachBackingFieldToOperationTimeout">
+            <summary>Attaches delegates to emulate StubICalculatorServiceChannel.OperationTimeout as a property with a backing field.</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.BeginCloseAsyncCallbackObject">
+            <summary>Sets the stub of ICommunicationObject.BeginClose(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.BeginCloseTimeSpanAsyncCallbackObject">
+            <summary>Sets the stub of ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.BeginDisplayInitializationUIAsyncCallbackObject">
+            <summary>Sets the stub of IClientChannel.BeginDisplayInitializationUI(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.BeginOpenAsyncCallbackObject">
+            <summary>Sets the stub of ICommunicationObject.BeginOpen(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.BeginOpenTimeSpanAsyncCallbackObject">
+            <summary>Sets the stub of ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.c::Client#ServiceReference1#ICalculatorService#Add(System.Int32,System.Int32)">
+            <summary>Sets the stub of ICalculatorService.Add(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.c::Client#ServiceReference1#ICalculatorService#AddAsync(System.Int32,System.Int32)">
+            <summary>Sets the stub of ICalculatorService.AddAsync(Int32 a, Int32 b)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.Close">
+            <summary>Sets the stub of ICommunicationObject.Close()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.CloseTimeSpan">
+            <summary>Sets the stub of ICommunicationObject.Close(TimeSpan timeout)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.DidInteractiveInitializationGet">
+            <summary>Sets the stub of IClientChannel.get_DidInteractiveInitialization()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.DisplayInitializationUI">
+            <summary>Sets the stub of IClientChannel.DisplayInitializationUI()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.EndCloseIAsyncResult">
+            <summary>Sets the stub of ICommunicationObject.EndClose(IAsyncResult result)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.EndDisplayInitializationUIIAsyncResult">
+            <summary>Sets the stub of IClientChannel.EndDisplayInitializationUI(IAsyncResult result)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.EndOpenIAsyncResult">
+            <summary>Sets the stub of ICommunicationObject.EndOpen(IAsyncResult result)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ExtensionsGet">
+            <summary>Sets the stub of IExtensibleObject`1.get_Extensions()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.GetPropertyOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0})">
+            <summary>Sets stubs of GetProperty()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.InputSessionGet">
+            <summary>Sets the stub of IContextChannel.get_InputSession()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.LocalAddressGet">
+            <summary>Sets the stub of IContextChannel.get_LocalAddress()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.Open">
+            <summary>Sets the stub of ICommunicationObject.Open()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.OpenTimeSpan">
+            <summary>Sets the stub of ICommunicationObject.Open(TimeSpan timeout)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.OperationTimeoutGet">
+            <summary>Sets the stub of IContextChannel.get_OperationTimeout()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.OperationTimeoutSetTimeSpan">
+            <summary>Sets the stub of IContextChannel.set_OperationTimeout(TimeSpan value)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.OutputSessionGet">
+            <summary>Sets the stub of IContextChannel.get_OutputSession()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.RemoteAddressGet">
+            <summary>Sets the stub of IContextChannel.get_RemoteAddress()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.SessionIdGet">
+            <summary>Sets the stub of IContextChannel.get_SessionId()</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.StateGet">
+            <summary>Sets the stub of ICommunicationObject.get_State()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#Channels#IChannel#GetProperty``1">
+            <summary>Sets the stub of IChannel.GetProperty()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#BeginDisplayInitializationUI(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of IClientChannel.BeginDisplayInitializationUI(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#DisplayInitializationUI">
+            <summary>Sets the stub of IClientChannel.DisplayInitializationUI()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#EndDisplayInitializationUI(System.IAsyncResult)">
+            <summary>Sets the stub of IClientChannel.EndDisplayInitializationUI(IAsyncResult result)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#Abort">
+            <summary>Sets the stub of ICommunicationObject.Abort()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of ICommunicationObject.BeginClose(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of ICommunicationObject.BeginOpen(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#Close">
+            <summary>Sets the stub of ICommunicationObject.Close()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)">
+            <summary>Sets the stub of ICommunicationObject.Close(TimeSpan timeout)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)">
+            <summary>Sets the stub of ICommunicationObject.EndClose(IAsyncResult result)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)">
+            <summary>Sets the stub of ICommunicationObject.EndOpen(IAsyncResult result)</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#Open">
+            <summary>Sets the stub of ICommunicationObject.Open()</summary>
+        </member>
+        <member name="M:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)">
+            <summary>Sets the stub of ICommunicationObject.Open(TimeSpan timeout)</summary>
+        </member>
+        <member name="F:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ViaGet">
+            <summary>Sets the stub of IClientChannel.get_Via()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#AllowInitializationUI">
+            <summary>Sets the stub of IClientChannel.get_AllowInitializationUI()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#AllowOutputBatching">
+            <summary>Sets the stub of IContextChannel.get_AllowOutputBatching()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#DidInteractiveInitialization">
+            <summary>Sets the stub of IClientChannel.get_DidInteractiveInitialization()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IExtensibleObject{System#ServiceModel#IContextChannel}#Extensions">
+            <summary>Sets the stub of IExtensibleObject`1.get_Extensions()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#InputSession">
+            <summary>Sets the stub of IContextChannel.get_InputSession()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#LocalAddress">
+            <summary>Sets the stub of IContextChannel.get_LocalAddress()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#OperationTimeout">
+            <summary>Sets the stub of IContextChannel.get_OperationTimeout()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#OutputSession">
+            <summary>Sets the stub of IContextChannel.get_OutputSession()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#RemoteAddress">
+            <summary>Sets the stub of IContextChannel.get_RemoteAddress()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IContextChannel#SessionId">
+            <summary>Sets the stub of IContextChannel.get_SessionId()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#ICommunicationObject#State">
+            <summary>Sets the stub of ICommunicationObject.get_State()</summary>
+        </member>
+        <member name="P:Client.ServiceReference1.Fakes.StubICalculatorServiceChannel.ssm::System#ServiceModel#IClientChannel#Via">
+            <summary>Sets the stub of IClientChannel.get_Via()</summary>
+        </member>
+    </members>
+</doc>
