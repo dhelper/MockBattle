@@ -13,7 +13,7 @@ namespace RobustMocks
         {
             var fakeObject = new StubIDependency
                 {
-                    SomeMethodWithParams1Int32String = (i, s) =>
+                    SomeMethodWithParamsInt32String = (i, s) =>
                         {
                             return 42;
                         }
@@ -28,7 +28,7 @@ namespace RobustMocks
         public void FakeItEasyTest()
         {
             var fakeObject = A.Fake<IDependency>();
-            A.CallTo(() => fakeObject.SomeMethodWithParams1(A<int>.Ignored, A<string>.Ignored)).Returns(42);
+            A.CallTo(() => fakeObject.SomeMethodWithParams(A<int>.Ignored, A<string>.Ignored)).Returns(42);
 
             var cut = new MyObject(fakeObject);
 

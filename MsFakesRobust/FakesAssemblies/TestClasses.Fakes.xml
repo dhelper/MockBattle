@@ -31,8 +31,8 @@
         <member name="P:TestClasses.Fakes.ShimDependency.Constructor">
             <summary>Sets the shim of Dependency.Dependency()</summary>
         </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.SomeMethodWithParams1Int32String">
-            <summary>Sets the shim of Dependency.SomeMethodWithParams1(Int32 i, String s)</summary>
+        <member name="P:TestClasses.Fakes.ShimDependency.SomeMethodWithParamsInt32String">
+            <summary>Sets the shim of Dependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="T:TestClasses.Fakes.ShimDependency.AllInstances">
             <summary>Define shims for all instances members</summary>
@@ -40,8 +40,8 @@
         <member name="P:TestClasses.Fakes.ShimDependency.AllInstances.AnotherMethodWithParamsInt32">
             <summary>Sets the shim of Dependency.AnotherMethodWithParams(Int32 result)</summary>
         </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.AllInstances.SomeMethodWithParams1Int32String">
-            <summary>Sets the shim of Dependency.SomeMethodWithParams1(Int32 i, String s)</summary>
+        <member name="P:TestClasses.Fakes.ShimDependency.AllInstances.SomeMethodWithParamsInt32String">
+            <summary>Sets the shim of Dependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="T:TestClasses.Fakes.ShimMyObject">
             <summary>Shim type of TestClasses.MyObject</summary>
@@ -100,14 +100,14 @@
         <member name="F:TestClasses.Fakes.StubIDependency.AnotherMethodWithParamsInt32">
             <summary>Sets the stub of IDependency.AnotherMethodWithParams(Int32 result)</summary>
         </member>
-        <member name="F:TestClasses.Fakes.StubIDependency.SomeMethodWithParams1Int32String">
-            <summary>Sets the stub of IDependency.SomeMethodWithParams1(Int32 i, String s)</summary>
+        <member name="F:TestClasses.Fakes.StubIDependency.SomeMethodWithParamsInt32String">
+            <summary>Sets the stub of IDependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="M:TestClasses.Fakes.StubIDependency.tc::TestClasses#IDependency#AnotherMethodWithParams(System.Int32)">
             <summary>Sets the stub of IDependency.AnotherMethodWithParams(Int32 result)</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubIDependency.tc::TestClasses#IDependency#SomeMethodWithParams1(System.Int32,System.String)">
-            <summary>Sets the stub of IDependency.SomeMethodWithParams1(Int32 i, String s)</summary>
+        <member name="M:TestClasses.Fakes.StubIDependency.tc::TestClasses#IDependency#SomeMethodWithParams(System.Int32,System.String)">
+            <summary>Sets the stub of IDependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="T:TestClasses.Fakes.StubMyObject">
             <summary>Stub type of TestClasses.MyObject</summary>

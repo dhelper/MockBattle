@@ -51,7 +51,7 @@ namespace RobustMocks
 
             var isThisB = fakeA.GetB();
 
-            Assert.NotNull(isThisB);
+            Assert.Null(isThisB);
         }
 
 

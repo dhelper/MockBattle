@@ -1,4 +1,4 @@
-﻿using FakeItEasy;
+﻿using Moq;
 using Xunit;
 
 namespace FakingThreads
@@ -8,13 +8,13 @@ namespace FakingThreads
         [Fact]
         public void TestMySystemCalls()
         {
-            var filesystem = A.Fake<IFile>();
+            var fakeFile = new Mock<IFile>();
 
-            A.CallTo(() => filesystem.Exists(A<string>.Ignored)).Returns(true);
+            fakeFile.Setup(file => file.Exists(It.IsAny<string>())).Returns(true);
 
-            var obj = new ClassUnderTest(filesystem);
-            
-            obj.CheckIfFileExists("!@@$#%%#$^"); 
+            var obj = new ClassUnderTest(fakeFile.Object);
+
+            obj.CheckIfFileExists("!@@$#%%#$^");
         }
     }
 }

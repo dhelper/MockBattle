@@ -11,7 +11,7 @@
 
         public void SomeMethod()
         {
-            var result =  _dependency.SomeMethodWithParams1(0, "dummy");
+            var result =  _dependency.SomeMethodWithParams(0, "dummy");
 
             _dependency.AnotherMethodWithParams(result);
         }
