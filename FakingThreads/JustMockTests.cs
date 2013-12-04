@@ -1,12 +1,13 @@
-﻿using System.IO;
+﻿using NUnit.Framework;
+using System.IO;
 using Telerik.JustMock;
-using Xunit;
 
-namespace FakingThreads
+namespace FakingFile
 {
+    [TestFixture]
     public class JustMockTests
     {
-        [Fact]
+        [Test]
         public void IDontNeedNoInterfacesTest()
         {
             Mock.Arrange(() => File.Exists(Arg.IsAny<string>())).Returns(true);

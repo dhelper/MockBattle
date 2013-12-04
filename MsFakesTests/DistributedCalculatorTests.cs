@@ -12,7 +12,7 @@ namespace MsFakesTests
         [Test]
         public void Calculate_ReturnTwoValidNumbers_ServerCalled()
         {
-            var fakeDataAccess = new StubIDataAccess
+            IDataAccess fakeDataAccess = new StubIDataAccess
                 {
                     GetDataString = _ => new Tuple<int, int>(2, 3)
                 };

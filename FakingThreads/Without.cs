@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace FakingThreads
+namespace FakingFile
 {
     public interface IFile
     {

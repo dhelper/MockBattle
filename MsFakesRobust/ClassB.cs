@@ -7,6 +7,12 @@ namespace RobustMocks
 {
     public interface IClassB
     {
-        int GetFive();        
+        int GetFive();
+        IClassC GetC();
+    }
+
+    public interface IClassC
+    {
+
     }
 }

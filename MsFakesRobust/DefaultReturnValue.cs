@@ -43,25 +43,13 @@ namespace RobustMocks
 
             Assert.Null(isThisB);
         }
-        
-        [Test, Isolated]
-        public void IsolatorRecusrsiveFake()
-        {
-            var fakeA = Isolate.Fake.Instance<ClassA>();
-
-            var isThisB = fakeA.GetB();
-
-            Assert.Null(isThisB);
-        }
-
-
     }
 
     public class ClassA
     {
-        public IClassB GetB()
+        virtual public IClassB GetB()
         {
-            return null;
+            throw new NotImplementedException();
         }
     }
 }

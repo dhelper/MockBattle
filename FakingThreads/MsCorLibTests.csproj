@@ -36,6 +36,9 @@
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.1.1311.0615\lib\net40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,9 +48,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.JustMock">
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Telerik\JustMock\Libraries\Telerik.JustMock.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit">
-      <HintPath>..\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

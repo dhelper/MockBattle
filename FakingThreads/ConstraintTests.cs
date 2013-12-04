@@ -1,11 +1,12 @@
 ﻿using Moq;
-using Xunit;
+using NUnit.Framework;
 
-namespace FakingThreads
+namespace FakingFile
 {
+    [TestFixture]
     public class ConstraintTests
     {
-        [Fact]
+        [Test]
         public void TestMySystemCalls()
         {
             var fakeFile = new Mock<IFile>();
