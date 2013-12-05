@@ -15,17 +15,7 @@ namespace RobustMocks
     public class DefaultReturnValue
     {
         [Test]
-        public void FakeItEasyReturnNull()
-        {
-            var fakeA = A.Fake<ClassA>();
-
-            var isThisB = fakeA.GetB();
-
-            Assert.Null(isThisB);
-        }
-
-        [Test]
-        public void MoqRecusrsiveFakeReturnNull()
+        public void MoqRecusrsiveFakeTest()
         {
             var fakeA = new Mock<ClassA>().Object;
 
@@ -35,13 +25,25 @@ namespace RobustMocks
         }
 
         [Test]
-        public void nSubtituteReturnNull()
+        public void nSubtituteRecusrsiveFakeTest()
         {
             var fakeA = Substitute.For<ClassA>();
 
             var isThisB = fakeA.GetB();
 
             Assert.Null(isThisB);
+        }
+
+        [Test]
+        public void NMock3RecusrsiveFakeTest()
+        {
+            var factory = new NMock.MockFactory();
+
+            var fakeA = factory.CreateMock<ClassA>();
+
+            var isThisB = fakeA.MockObject.GetB();
+
+            Assert.IsNull(isThisB);
         }
     }
 
