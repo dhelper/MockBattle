@@ -2,6 +2,9 @@
 <Profilers xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ShowOnlyAvailableProfilers>false</ShowOnlyAvailableProfilers>
   <ProfilerList>
+    <Profiler Name="NCover4.5" Clsid="{7D35BD6E-BC90-44D2-9DC7-4E555B643072}" DirectLaunch="false">
+      <EnvironmentList />
+    </Profiler>
     <Profiler Name="Typemock Racer" Clsid="{EDBF1A50-6FF3-49C7-902B-D9CF20D44ACC}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
@@ -27,14 +30,14 @@
     <Profiler Name="CoverageEye" Clsid="{18656C37-035D-41CD-82C2-85DEF2DD5F7B}" DirectLaunch="true">
       <EnvironmentList />
     </Profiler>
-	
-	<Profiler Name="MightyMoose 32bit " Clsid="{36C8D782-F697-45C4-856A-92D05C061A39}" DirectLaunch="false">
+
+    <Profiler Name="MightyMoose 32bit " Clsid="{36C8D782-F697-45C4-856A-92D05C061A39}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
-	<Profiler Name="MightyMoose 64bit " Clsid="{5D789D88-EEE7-46C4-909F-E39D5606544D}" DirectLaunch="false">
+    <Profiler Name="MightyMoose 64bit " Clsid="{5D789D88-EEE7-46C4-909F-E39D5606544D}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
-	
+
     <Profiler Name="NCover4.1" Clsid="{3E8C918E-5A84-4971-A6AF-20B97F48B6B3}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
@@ -108,13 +111,16 @@
     <Profiler Name="Visual Studio 2010 Profilers" Clsid="{301EC75B-AD5A-459C-A4C4-911C878FA196}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
-	<Profiler Name="Visual Studio 2012 Profilers" Clsid="{B19F184A-CC62-4137-9A6F-AF0F91730165}" DirectLaunch="false">
+    <Profiler Name="Visual Studio 2012 Profilers" Clsid="{B19F184A-CC62-4137-9A6F-AF0F91730165}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
     <Profiler Name="Phoenix" Clsid="{13BC4E68-A00B-43B9-A55D-4D0CB1D7018B}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
     <Profiler Name="OpenCover" Clsid="{1542C21D-80C3-45E6-A56C-A9C1E4BEB7B8}" DirectLaunch="false">
+      <EnvironmentList />
+    </Profiler>
+    <Profiler Name="OpenCover4" Clsid="{1542C21D-80C3-45E6-A56C-A9C1E4BEB7BF}" DirectLaunch="false">
       <EnvironmentList />
     </Profiler>
   </ProfilerList>
