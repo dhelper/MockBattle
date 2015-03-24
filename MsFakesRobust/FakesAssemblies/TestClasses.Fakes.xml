@@ -4,6 +4,42 @@
         <name>TestClasses.Fakes</name>
     </assembly>
     <members>
+        <member name="T:TestClasses.Fakes.ShimClassA">
+            <summary>Shim type of TestClasses.ClassA</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimClassA.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimClassA.#ctor(TestClasses.ClassA)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimClassA.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimClassA.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.Constructor">
+            <summary>Sets the shim of ClassA.ClassA()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.IWantB">
+            <summary>Sets the shim of ClassA.IWantB()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.ReturnFive">
+            <summary>Sets the shim of ClassA.ReturnFive()</summary>
+        </member>
+        <member name="T:TestClasses.Fakes.ShimClassA.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.IWantB">
+            <summary>Sets the shim of ClassA.IWantB()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.ReturnFive">
+            <summary>Sets the shim of ClassA.ReturnFive()</summary>
+        </member>
         <member name="T:TestClasses.Fakes.ShimDependency">
             <summary>Shim type of TestClasses.Dependency</summary>
         </member>
@@ -73,6 +109,36 @@
         <member name="P:TestClasses.Fakes.ShimMyObject.AllInstances.SomeMethod">
             <summary>Sets the shim of MyObject.SomeMethod()</summary>
         </member>
+        <member name="T:TestClasses.Fakes.StubClassA">
+            <summary>Stub type of TestClasses.ClassA</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubClassA.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubClassA.IWantB">
+            <summary>Sets the stub of ClassA.IWantB()</summary>
+        </member>
+        <member name="F:TestClasses.Fakes.StubClassA.IWantB01">
+            <summary>Sets the stub of ClassA.IWantB()</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubClassA.InitializeStub">
+            <summary>Initializes a new instance of type StubClassA</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubClassA.ReturnFive">
+            <summary>Sets the stub of ClassA.ReturnFive()</summary>
+        </member>
+        <member name="F:TestClasses.Fakes.StubClassA.ReturnFive01">
+            <summary>Sets the stub of ClassA.ReturnFive()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.StubClassA.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.StubClassA.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.StubClassA.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
         <member name="T:TestClasses.Fakes.StubDependency">
             <summary>Stub type of TestClasses.Dependency</summary>
         </member>
@@ -90,6 +156,30 @@
         </member>
         <member name="P:TestClasses.Fakes.StubDependency.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:TestClasses.Fakes.StubIClassB">
+            <summary>Stub type of TestClasses.IClassB</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubIClassB.#ctor">
+            <summary>Initializes a new instance of type StubIClassB</summary>
+        </member>
+        <member name="F:TestClasses.Fakes.StubIClassB.GetC">
+            <summary>Sets the stub of IClassB.GetC()</summary>
+        </member>
+        <member name="F:TestClasses.Fakes.StubIClassB.GetFive">
+            <summary>Sets the stub of IClassB.GetFive()</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubIClassB.tc::TestClasses#IClassB#GetC">
+            <summary>Sets the stub of IClassB.GetC()</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubIClassB.tc::TestClasses#IClassB#GetFive">
+            <summary>Sets the stub of IClassB.GetFive()</summary>
+        </member>
+        <member name="T:TestClasses.Fakes.StubIClassC">
+            <summary>Stub type of TestClasses.IClassC</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubIClassC.#ctor">
+            <summary>Initializes a new instance of type StubIClassC</summary>
         </member>
         <member name="T:TestClasses.Fakes.StubIDependency">
             <summary>Stub type of TestClasses.IDependency</summary>

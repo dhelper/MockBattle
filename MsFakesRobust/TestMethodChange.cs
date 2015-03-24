@@ -30,6 +30,7 @@ namespace RobustMocks
             var fakeObject = A.Fake<IDependency>();
             A.CallTo(() => fakeObject.SomeMethodWithParams(A<int>.Ignored, A<string>.Ignored)).Returns(42);
 
+
             var cut = new MyObject(fakeObject);
 
             cut.SomeMethod();

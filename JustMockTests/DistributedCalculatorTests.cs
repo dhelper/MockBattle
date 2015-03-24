@@ -14,7 +14,7 @@ namespace JustMockTests
         {
             IDataAccess fakeDataAccess = Mock.Create<IDataAccess>();
             Mock.Arrange(() => fakeDataAccess.GetData(Arg.IsAny<string>())).Returns(new Tuple<int, int>(2, 3));
-
+            
             var fakeCalculatorService = Mock.Create<ICalculatorService>();
 
             var cut = new DistrobutedCalculator(fakeDataAccess, fakeCalculatorService);

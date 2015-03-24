@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassA.cs" />
     <Compile Include="Dependency.cs" />
+    <Compile Include="IClassB.cs" />
+    <Compile Include="IClassC.cs" />
     <Compile Include="MyObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
