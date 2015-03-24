@@ -24,7 +24,7 @@ namespace FakingFile
 
             Mock.Arrange(() => real.NonVirtualMethod()).Returns(10);
 
-            Assert.AreEqual(10, real);
+            Assert.AreEqual(10, real.NonVirtualMethod());
         }
     }
 
