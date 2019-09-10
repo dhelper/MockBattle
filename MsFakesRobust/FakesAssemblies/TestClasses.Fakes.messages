@@ -1,3 +1,3 @@
-C:\Users\Dror\Documents\GitHub\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IDependency: type is an interface.
-C:\Users\Dror\Documents\GitHub\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IClassB: type is an interface.
-C:\Users\Dror\Documents\GitHub\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IClassC: type is an interface.
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IDependency: type is an interface.
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IClassB: type is an interface.
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesRobust\Fakes\TestClasses.fakes : warning : Cannot generate shim for TestClasses.IClassC: type is an interface.

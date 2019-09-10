@@ -13,6 +13,15 @@
         <member name="M:TestClasses.Fakes.ShimClassA.#ctor(TestClasses.ClassA)">
             <summary>Initializes a new shim for the given instance</summary>
         </member>
+        <member name="T:TestClasses.Fakes.ShimClassA.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.IWantB">
+            <summary>Sets the shim of ClassA.IWantB()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.ReturnFive">
+            <summary>Sets the shim of ClassA.ReturnFive()</summary>
+        </member>
         <member name="M:TestClasses.Fakes.ShimClassA.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -31,15 +40,6 @@
         <member name="P:TestClasses.Fakes.ShimClassA.ReturnFive">
             <summary>Sets the shim of ClassA.ReturnFive()</summary>
         </member>
-        <member name="T:TestClasses.Fakes.ShimClassA.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.IWantB">
-            <summary>Sets the shim of ClassA.IWantB()</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimClassA.AllInstances.ReturnFive">
-            <summary>Sets the shim of ClassA.ReturnFive()</summary>
-        </member>
         <member name="T:TestClasses.Fakes.ShimDependency">
             <summary>Shim type of TestClasses.Dependency</summary>
         </member>
@@ -48,27 +48,6 @@
         </member>
         <member name="M:TestClasses.Fakes.ShimDependency.#ctor(TestClasses.Dependency)">
             <summary>Initializes a new shim for the given instance</summary>
-        </member>
-        <member name="M:TestClasses.Fakes.ShimDependency.BehaveAsCurrent">
-            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:TestClasses.Fakes.ShimDependency.BehaveAsNotImplemented">
-            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:TestClasses.Fakes.ShimDependency.Bind(TestClasses.IDependency)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.AnotherMethodWithParamsInt32">
-            <summary>Sets the shim of Dependency.AnotherMethodWithParams(Int32 result)</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.Behavior">
-            <summary>Assigns the behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.Constructor">
-            <summary>Sets the shim of Dependency.Dependency()</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimDependency.SomeMethodWithParamsInt32String">
-            <summary>Sets the shim of Dependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="T:TestClasses.Fakes.ShimDependency.AllInstances">
             <summary>Define shims for all instances members</summary>
@@ -79,6 +58,27 @@
         <member name="P:TestClasses.Fakes.ShimDependency.AllInstances.SomeMethodWithParamsInt32String">
             <summary>Sets the shim of Dependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
+        <member name="P:TestClasses.Fakes.ShimDependency.AnotherMethodWithParamsInt32">
+            <summary>Sets the shim of Dependency.AnotherMethodWithParams(Int32 result)</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimDependency.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimDependency.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimDependency.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.ShimDependency.Bind(TestClasses.IDependency)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimDependency.Constructor">
+            <summary>Sets the shim of Dependency.Dependency()</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimDependency.SomeMethodWithParamsInt32String">
+            <summary>Sets the shim of Dependency.SomeMethodWithParams(Int32 i, String s)</summary>
+        </member>
         <member name="T:TestClasses.Fakes.ShimMyObject">
             <summary>Shim type of TestClasses.MyObject</summary>
         </member>
@@ -87,6 +87,12 @@
         </member>
         <member name="M:TestClasses.Fakes.ShimMyObject.#ctor(TestClasses.MyObject)">
             <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TestClasses.Fakes.ShimMyObject.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.ShimMyObject.AllInstances.SomeMethod">
+            <summary>Sets the shim of MyObject.SomeMethod()</summary>
         </member>
         <member name="M:TestClasses.Fakes.ShimMyObject.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -103,17 +109,14 @@
         <member name="P:TestClasses.Fakes.ShimMyObject.SomeMethod">
             <summary>Sets the shim of MyObject.SomeMethod()</summary>
         </member>
-        <member name="T:TestClasses.Fakes.ShimMyObject.AllInstances">
-            <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.ShimMyObject.AllInstances.SomeMethod">
-            <summary>Sets the shim of MyObject.SomeMethod()</summary>
-        </member>
         <member name="T:TestClasses.Fakes.StubClassA">
             <summary>Stub type of TestClasses.ClassA</summary>
         </member>
         <member name="M:TestClasses.Fakes.StubClassA.#ctor">
             <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:TestClasses.Fakes.StubClassA.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
         </member>
         <member name="M:TestClasses.Fakes.StubClassA.IWantB">
             <summary>Sets the stub of ClassA.IWantB()</summary>
@@ -124,20 +127,17 @@
         <member name="M:TestClasses.Fakes.StubClassA.InitializeStub">
             <summary>Initializes a new instance of type StubClassA</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubClassA.ReturnFive">
-            <summary>Sets the stub of ClassA.ReturnFive()</summary>
-        </member>
-        <member name="F:TestClasses.Fakes.StubClassA.ReturnFive01">
-            <summary>Sets the stub of ClassA.ReturnFive()</summary>
-        </member>
-        <member name="P:TestClasses.Fakes.StubClassA.CallBase">
-            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
-        </member>
         <member name="P:TestClasses.Fakes.StubClassA.InstanceBehavior">
             <summary>Gets or sets the instance behavior.</summary>
         </member>
         <member name="P:TestClasses.Fakes.StubClassA.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubClassA.ReturnFive">
+            <summary>Sets the stub of ClassA.ReturnFive()</summary>
+        </member>
+        <member name="F:TestClasses.Fakes.StubClassA.ReturnFive01">
+            <summary>Sets the stub of ClassA.ReturnFive()</summary>
         </member>
         <member name="T:TestClasses.Fakes.StubDependency">
             <summary>Stub type of TestClasses.Dependency</summary>
@@ -145,11 +145,11 @@
         <member name="M:TestClasses.Fakes.StubDependency.#ctor">
             <summary>Initializes a new instance</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubDependency.InitializeStub">
-            <summary>Initializes a new instance of type StubDependency</summary>
-        </member>
         <member name="P:TestClasses.Fakes.StubDependency.CallBase">
             <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubDependency.InitializeStub">
+            <summary>Initializes a new instance of type StubDependency</summary>
         </member>
         <member name="P:TestClasses.Fakes.StubDependency.InstanceBehavior">
             <summary>Gets or sets the instance behavior.</summary>
@@ -169,10 +169,10 @@
         <member name="F:TestClasses.Fakes.StubIClassB.GetFive">
             <summary>Sets the stub of IClassB.GetFive()</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubIClassB.tc::TestClasses#IClassB#GetC">
+        <member name="M:TestClasses.Fakes.StubIClassB.TestClasses#IClassB#GetC">
             <summary>Sets the stub of IClassB.GetC()</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubIClassB.tc::TestClasses#IClassB#GetFive">
+        <member name="M:TestClasses.Fakes.StubIClassB.TestClasses#IClassB#GetFive">
             <summary>Sets the stub of IClassB.GetFive()</summary>
         </member>
         <member name="T:TestClasses.Fakes.StubIClassC">
@@ -193,10 +193,10 @@
         <member name="F:TestClasses.Fakes.StubIDependency.SomeMethodWithParamsInt32String">
             <summary>Sets the stub of IDependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubIDependency.tc::TestClasses#IDependency#AnotherMethodWithParams(System.Int32)">
+        <member name="M:TestClasses.Fakes.StubIDependency.TestClasses#IDependency#AnotherMethodWithParams(System.Int32)">
             <summary>Sets the stub of IDependency.AnotherMethodWithParams(Int32 result)</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubIDependency.tc::TestClasses#IDependency#SomeMethodWithParams(System.Int32,System.String)">
+        <member name="M:TestClasses.Fakes.StubIDependency.TestClasses#IDependency#SomeMethodWithParams(System.Int32,System.String)">
             <summary>Sets the stub of IDependency.SomeMethodWithParams(Int32 i, String s)</summary>
         </member>
         <member name="T:TestClasses.Fakes.StubMyObject">
@@ -205,11 +205,11 @@
         <member name="M:TestClasses.Fakes.StubMyObject.#ctor(TestClasses.IDependency)">
             <summary>Initializes a new instance</summary>
         </member>
-        <member name="M:TestClasses.Fakes.StubMyObject.InitializeStub">
-            <summary>Initializes a new instance of type StubMyObject</summary>
-        </member>
         <member name="P:TestClasses.Fakes.StubMyObject.CallBase">
             <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:TestClasses.Fakes.StubMyObject.InitializeStub">
+            <summary>Initializes a new instance of type StubMyObject</summary>
         </member>
         <member name="P:TestClasses.Fakes.StubMyObject.InstanceBehavior">
             <summary>Gets or sets the instance behavior.</summary>

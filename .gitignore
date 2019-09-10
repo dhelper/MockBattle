@@ -213,3 +213,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+/.vs/MockBattle/v16/TestStore/1
+/.vs/MockBattle/v16/Server/sqlite3
+/.vs/MockBattle/v15/Server/sqlite3
