@@ -15,7 +15,7 @@ namespace Client
 
             var data = new DataAccess();
 
-            var engine = new DistrobutedCalculator(data, client);
+            var engine = new DistributedCalculator(data, client);
 
             var result = engine.Calculate();
 

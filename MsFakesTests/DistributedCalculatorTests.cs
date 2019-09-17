@@ -28,7 +28,7 @@ namespace MsFakesTests
                         }
                 };
 
-            var cut = new DistrobutedCalculator(fakeDataAccess, fakeCalculatorService);
+            var cut = new DistributedCalculator(fakeDataAccess, fakeCalculatorService);
 
             cut.Calculate();
 

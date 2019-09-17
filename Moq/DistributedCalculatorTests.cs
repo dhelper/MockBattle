@@ -17,7 +17,7 @@ namespace MoqTests
 
             Mock<ICalculatorService> fakeCalculatorService = new Mock<ICalculatorService>();
 
-            var cut = new DistrobutedCalculator(fakeDataAccess.Object, fakeCalculatorService.Object);
+            var cut = new DistributedCalculator(fakeDataAccess.Object, fakeCalculatorService.Object);
 
             cut.Calculate();
 

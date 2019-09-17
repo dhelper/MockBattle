@@ -27,7 +27,7 @@ namespace NMockTests
             var fakeCalculatorService = _factory.CreateMock<ICalculatorService>();
             fakeCalculatorService.Expects.AtLeastOne.MethodWith(service => service.Add(2, 3));
 
-            var cut = new DistrobutedCalculator(fakeDataAccess.MockObject, fakeCalculatorService.MockObject);
+            var cut = new DistributedCalculator(fakeDataAccess.MockObject, fakeCalculatorService.MockObject);
 
             cut.Calculate();
 

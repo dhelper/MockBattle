@@ -13,11 +13,12 @@ namespace FakeItEasyTests
         public void Calculate_ReturnTwoValidNumbers_ServerCalled()
         {
             IDataAccess fakeDataAccess = A.Fake<IDataAccess>();
-            A.CallTo(() => fakeDataAccess.GetData(A<string>.Ignored)).Returns(new Tuple<int, int>(2, 3));
+            A.CallTo(() => fakeDataAccess.GetData(A<string>.Ignored))
+                .Returns(new Tuple<int, int>(2, 3));
 
             var fakeCalculatorService = A.Fake<ICalculatorService>();
 
-            var cut = new DistrobutedCalculator(fakeDataAccess, fakeCalculatorService);
+            var cut = new DistributedCalculator(fakeDataAccess, fakeCalculatorService);
 
             cut.Calculate();
 

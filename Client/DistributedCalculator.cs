@@ -3,12 +3,12 @@ using Client.ServiceReference1;
 
 namespace Client
 {
-    public class DistrobutedCalculator
+    public class DistributedCalculator
     {
         private readonly IDataAccess _dataAccess;
         private readonly ICalculatorService _calculator;
 
-        public DistrobutedCalculator(IDataAccess dataAccess, ICalculatorService calculator)
+        public DistributedCalculator(IDataAccess dataAccess, ICalculatorService calculator)
         {
             _dataAccess = dataAccess;
             _calculator = calculator;

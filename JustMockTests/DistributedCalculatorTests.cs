@@ -17,7 +17,7 @@ namespace JustMockTests
             
             var fakeCalculatorService = Mock.Create<ICalculatorService>();
 
-            var cut = new DistrobutedCalculator(fakeDataAccess, fakeCalculatorService);
+            var cut = new DistributedCalculator(fakeDataAccess, fakeCalculatorService);
 
             cut.Calculate();
 

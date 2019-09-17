@@ -1,0 +1,5 @@
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesTests\Fakes\Client.fakes : warning : Cannot generate stub for Client.Program: type is not visible to exported or assembly(Client.Fakes).
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesTests\Fakes\Client.fakes : warning : Cannot generate shim for Client.IDataAccess: type is an interface.
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesTests\Fakes\Client.fakes : warning : Cannot generate shim for Client.Program: type is not visible to exported or assembly(Client.Fakes).
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesTests\Fakes\Client.fakes : warning : Cannot generate shim for Client.ServiceReference1.ICalculatorService: type is an interface.
+C:\Users\drorh\Source\Repos\MockBattle\MsFakesTests\Fakes\Client.fakes : warning : Cannot generate shim for Client.ServiceReference1.ICalculatorServiceChannel: type is an interface.
